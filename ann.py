@@ -111,7 +111,7 @@ if __name__ == '__main__':
     #the and  function
     and_ann = ANN([2,1])
     inputs = [[0.0,0.0],[0.0,1.0],[1.0,0.0],[1.0,1.0]]
-    targets = [[0.0],[0.0],[0.0],[1.0]]
+    targets = [[0.0],[1.0],[1.0],[1.0]]
 
     print('befor traning')
     # predict without  traning
@@ -122,4 +122,4 @@ if __name__ == '__main__':
 
     and_ann.train(inputs,targets,20000)
     for j in range(len(targets)):
-        print(inputs[i],and_ann.predict(inputs[i]))
+        print(inputs[j],and_ann.predict(inputs[j]))
